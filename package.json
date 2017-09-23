@@ -1,8 +1,8 @@
 {
-  "name": "notes-node",
+  "name": "node-notes-app",
   "version": "1.0.0",
   "description": "",
-  "main": "add.js",
+  "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -10,6 +10,6 @@
   "license": "ISC",
   "dependencies": {
     "lodash": "^4.17.4",
-    "yargs": "^4.7.1"
+    "yargs": "^9.0.1"
   }
 }
