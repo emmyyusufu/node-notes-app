@@ -1,4 +1,3 @@
-console.log('Starting app');
 // attach fs, lodash, yargs module content to fs, _, yargs variable
 // lodash is for modular utilities, yargs is for parsing cmd line commands.
 const fs = require('fs');
@@ -27,7 +26,12 @@ if (command === 'add') {
     }
 }   
 else if (command === 'list') {
-    notes.listAll();
+    var everyNote = notes.listAll();
+    console.log(`Printing ${everyNote.length} note(s).`);
+    everyNote.forEach((note) => {
+        notes.logNote(note);
+    });
+    
 }   
 else if (command === 'read') {
     var toRead = notes.readNote(argv.title);

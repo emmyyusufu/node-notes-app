@@ -12,7 +12,7 @@ const saveNotes = (notes) => {
     fs.writeFileSync('notes-file.json', JSON.stringify(notes));
 }
 const logNote = (notes) => {
-    console.log('Note log');
+    console.log('A Note');
     console.log('-------------------');
     console.log('Title ' + notes.title);
     console.log('Body ' + notes.body);
@@ -44,6 +44,7 @@ var addNote = (title, body) => {
 
 var listAll = () => {
     console.log('listing all notes');
+    return fetchNotes();
 }
 
 var readNote = (title) => {
